@@ -5,7 +5,7 @@ require 'gcm_faraday/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gcm_faraday"
-  spec.version       = GcmFaraday::VERSION
+  spec.version       = GCMFaraday::VERSION
   spec.authors       = ["Trevor John"]
   spec.email         = ["trevor@john.tj"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
@@ -19,6 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "faraday"
+  spec.add_dependency "gcm_middleware"
+
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "pry"
